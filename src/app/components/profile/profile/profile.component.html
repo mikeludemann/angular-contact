@@ -1,0 +1,13 @@
+<div #profile [attr.class]="containerclass">
+  <div [attr.class]="headlineclass">
+    {{this.headline}}
+  </div>
+  <div [attr.class]="elementclass">
+    <span class="firstName">{{this.firstname}}</span>
+    <span #secondname>
+      {{secondName()}}
+    </span>
+    <span class="lastName">{{this.lastname}}</span>
+    <span class="mail"><a [attr.href]="'mailto:' + this.mail">{{this.mail}}</a></span>
+  </div>
+</div>
